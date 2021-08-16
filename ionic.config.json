@@ -1,0 +1,7 @@
+{
+  "name": "tegrika_native",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
