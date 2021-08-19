@@ -71,6 +71,10 @@ export default function Network(self) {
     this.ws.emit("update-coordinates", Float32Array.from(coords));
   }
 
+  this.cancel = () => {
+    this.ws.emit("cancel");
+  }
+
   this.listen = (eventName, clb) => {
 
     let _clb = (data) => {

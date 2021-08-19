@@ -27,13 +27,13 @@ function Root() {
     Bridge.send("VKWebAppInit");
   });
 
+  const panel = panels.find(v => v.name == state.panel);
   return (
     <>
-      { panels.filter(v => v.name == state.panel).map(panel => (
+      { 
         <div key={panel.name} className={cs("panel", state.panel == panel.name ? "active" : "inactive")}>
           {React.createElement(panel.component, state.panel_props[panel.name])}
         </div>
-      ))
       }
     </>
   );
