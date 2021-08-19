@@ -3,6 +3,8 @@ import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
+import Game from './game/client';
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -22,7 +24,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App: React.FC = () => (
+const _App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
@@ -37,4 +39,4 @@ const App: React.FC = () => (
   </IonApp>
 );
 
-export default App;
+export default Game;

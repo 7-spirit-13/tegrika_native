@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'tegrika_native',
+  appName: 'Tegrika',
   webDir: 'build',
   bundledWebRuntime: false
 };
